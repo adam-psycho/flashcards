@@ -1,6 +1,6 @@
 <p class="directions">Click card to flip</p>
-<div class="flashcard" (swiperight)="nextCard()">
-	<div class="card" [class.flipped]="cardFlipped" (tap)="flipCard()" (click)="flipCard()">
+<div class="flashcard" (swiperight)="nextCard()" (tap)="flipCard()">
+	<div class="card" [class.flipped]="cardFlipped">
 		<div class="card-face" id="front" [attr.data-count]="keys['front'].length">
 			<p class="side-name">Front</p>
 			<p *ngFor="let key of keys['front']"><span *ngIf="!loading">{{cardData[key]}}</span></p>
