@@ -46,11 +46,6 @@ export class AppComponent {
   	const index = this.sides[side].indexOf(key);
   	if (index === -1) {
   		this.sides[side].push(key);
-	  	const otherSide: string = side === 'front' ? 'back' : 'front';
-	  	const otherSideIndex = this.sides[otherSide].indexOf(key);
-	  	if (otherSideIndex !== -1) {
-	  		this.sides[otherSide].splice(otherSideIndex, 1);
-	  	}
   	} else {
   		this.sides[side].splice(index, 1);
   	}

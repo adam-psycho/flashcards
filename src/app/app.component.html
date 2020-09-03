@@ -11,8 +11,8 @@
     <div class="flashcard-options">
       <div class="check-input" id="front">
         <label class="main-label">Front of card</label>
-        <div class="pretty p-default p-round" *ngFor="let key of keys">
-          <input type="radio" name="{{key}}" (change)="setKeys('front', key)" [attr.checked]="sides['front'].indexOf(key) === -1 ? null : true" />
+        <div class="pretty p-default " *ngFor="let key of keys">
+          <input type="checkbox" name="front-{{key}}" (change)="setKeys('front', key)" [attr.checked]="sides['front'].indexOf(key) === -1 ? null : true" />
           <div class="state">
             <label>{{key}}</label>
           </div>
@@ -20,8 +20,8 @@
       </div>
       <div class="check-input" id="back">
         <label class="main-label">Back of card</label>
-        <div class="pretty p-default p-round" *ngFor="let key of keys">
-          <input type="radio" name="{{key}}" (change)="setKeys('back', key)" [attr.checked]="sides['back'].indexOf(key) === -1 ? null : true" />
+        <div class="pretty p-default " *ngFor="let key of keys">
+          <input type="checkbox" name="back-{{key}}" (change)="setKeys('back', key)" [attr.checked]="sides['back'].indexOf(key) === -1 ? null : true" />
           <div class="state">
             <label>{{key}}</label>
           </div>
