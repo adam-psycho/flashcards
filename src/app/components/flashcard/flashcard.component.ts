@@ -29,6 +29,7 @@ export class FlashcardComponent{
 
   public nextCard(): void {
   	this.onNext.emit();
+  	this.cardFlipped = false;
   }
 
 }
