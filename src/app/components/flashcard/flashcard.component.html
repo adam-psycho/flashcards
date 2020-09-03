@@ -1,0 +1,15 @@
+<p class="directions">Click card to flip</p>
+<div class="flashcard" (click)="flipCard()">
+	<div class="card" [class.flipped]="cardFlipped">
+		<div class="card-face" id="front" [attr.data-count]="keys['front'].length">
+			<p *ngFor="let key of keys['front']">{{cardData[key]}}</p>
+		</div>
+		<div class="card-face" id="back" [attr.data-count]="keys['back'].length">
+			<p *ngFor="let key of keys['back']">{{cardData[key]}}</p>
+		</div>
+	</div>
+</div>
+<div class="flashcard-actions">
+	<!-- <button type="button" (click)="flipCard()">Flip</button> -->
+	<button type="button" (click)="nextCard()">Next</button>
+</div>
