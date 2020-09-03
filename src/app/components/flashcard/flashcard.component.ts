@@ -28,8 +28,10 @@ export class FlashcardComponent{
   }
 
   public nextCard(): void {
-  	this.onNext.emit();
   	this.cardFlipped = false;
+  	window.setTimeout(() => {
+  		this.onNext.emit();
+  	}, 700);
   }
 
 }
