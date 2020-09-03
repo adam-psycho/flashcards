@@ -3,11 +3,11 @@
 	<div class="card" [class.flipped]="cardFlipped">
 		<div class="card-face" id="front" [attr.data-count]="keys['front'].length">
 			<p class="side-name">Front</p>
-			<p *ngFor="let key of keys['front']">{{cardData[key]}}</p>
+			<p *ngFor="let key of keys['front']"><span *ngIf="!loading">{{cardData[key]}}</span></p>
 		</div>
 		<div class="card-face" id="back" [attr.data-count]="keys['back'].length">
 			<p class="side-name">Back</p>
-			<p *ngFor="let key of keys['back']">{{cardData[key]}}</p>
+			<p *ngFor="let key of keys['back']"><span *ngIf="!loading">{{cardData[key]}}</span></p>
 		</div>
 	</div>
 </div>

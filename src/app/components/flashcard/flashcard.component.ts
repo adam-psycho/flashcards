@@ -34,7 +34,7 @@ export class FlashcardComponent{
   	window.setTimeout(() => {
   		this.onNext.emit();
   		this.loading = false;
-  	}, 600);
+  	}, 250);
   }
 
 }
