@@ -10,6 +10,7 @@ export class FlashcardComponent{
 
 
   public cardFlipped: boolean = false;
+  public loading: boolean = false;
 
 	@Output() onNext: EventEmitter<any> = new EventEmitter(false);
   @Output() onFlip: EventEmitter<any> = new EventEmitter(false);
@@ -29,8 +30,10 @@ export class FlashcardComponent{
 
   public nextCard(): void {
   	this.cardFlipped = false;
+  	this.loading = true;
   	window.setTimeout(() => {
   		this.onNext.emit();
+  		this.loading = false;
   	}, 700);
   }
 
