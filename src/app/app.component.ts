@@ -15,7 +15,7 @@ export class AppComponent {
   }
 
   public data = hanzi;
-  public keys: string[] = ['hanzi', 'pinyin', 'english'];
+  public keys: string[] = hanzi.keys;
   public sides = {
   	front: ['hanzi'],
   	back: ['pinyin', 'english']

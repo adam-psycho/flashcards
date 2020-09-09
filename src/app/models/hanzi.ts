@@ -80,8 +80,8 @@ export const hanzi = {
 		},
 		{
 			hanzi:'老师好',
-			pinyin: 'Hello teacher',
-			english: 'Lǎoshī hǎo',
+			pinyin: 'Lǎoshī hǎo',
+			english: 'Hello teacher',
 		},
 		{
 			hanzi:'谢谢',
@@ -102,11 +102,6 @@ export const hanzi = {
 			hanzi:'司机',
 			pinyin: 'sījī',
 			english: 'driver',
-		},
-		{
-			hanzi:'没事',
-			pinyin: 'méi shì',
-			english: 'never mind',
 		},
 		{
 			hanzi:'不',
@@ -144,11 +139,6 @@ export const hanzi = {
 			english: 'no problem',
 		},
 		{
-			hanzi:'客气',
-			pinyin: 'kèqi',
-			english: 'polite',
-		},
-		{
 			hanzi: 'O',
 			pinyin: 'líng',
 			english: '0'
@@ -180,11 +170,6 @@ export const hanzi = {
 		},
 		{
 			hanzi: '六',
-			pinyin: 'wǔ',
-			english: '5'
-		},
-		{
-			hanzi: '五',
 			pinyin: 'liù',
 			english: '6'
 		},
