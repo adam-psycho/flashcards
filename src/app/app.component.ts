@@ -35,10 +35,11 @@ export class AppComponent {
   	if (this.previousKeys.length === (this.data.cards.length - 1)) {
   		this.previousKeys = [];
   	}
-  	while (newCardIndex === this.currentCardIndex || this.previousKeys.indexOf(newCardIndex) !== -1) {
+  	while (this.previousKeys.indexOf(newCardIndex) !== -1 || newCardIndex === this.currentCardIndex) {
   		newCardIndex = this.getRandomCardIndex();
   	}
   	this.previousKeys.push(this.currentCardIndex);
+  	console.log(this.previousKeys);
   	this.currentCardIndex = newCardIndex;
   }
 
