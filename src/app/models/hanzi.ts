@@ -148,5 +148,65 @@ export const hanzi = {
 			pinyin: 'kèqi',
 			english: 'polite',
 		},
+		{
+			hanzi: 'O',
+			pinyin: 'líng',
+			english: '0'
+		},
+		{
+			hanzi: '一',
+			pinyin: 'yī',
+			english: '1'
+		},
+		{
+			hanzi: '二',
+			pinyin: 'èr',
+			english: '2'
+		},
+		{
+			hanzi: '三',
+			pinyin: 'sān',
+			english: '3'
+		},
+		{
+			hanzi: '四',
+			pinyin: 'sì ',
+			english: '4'
+		},
+		{
+			hanzi: '五',
+			pinyin: 'wǔ',
+			english: '5'
+		},
+		{
+			hanzi: '六',
+			pinyin: 'wǔ',
+			english: '5'
+		},
+		{
+			hanzi: '五',
+			pinyin: 'liù',
+			english: '6'
+		},
+		{
+			hanzi: '七',
+			pinyin: 'qī',
+			english: '7'
+		},
+		{
+			hanzi: '八',
+			pinyin: 'bā',
+			english: '8'
+		},
+		{
+			hanzi: '九',
+			pinyin: 'jiǔ',
+			english: '9'
+		},
+		{
+			hanzi: '十',
+			pinyin: 'shí',
+			english: '10'
+		},
 	]
 }
