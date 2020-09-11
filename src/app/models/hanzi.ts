@@ -193,5 +193,241 @@ export const hanzi = {
 			pinyin: 'shí',
 			english: '10'
 		},
+
+		{
+			hanzi: '他',
+			pinyin: 'tā',
+			english: 'He/him'
+		},
+		{
+			hanzi: '吃',
+			pinyin: 'chī',
+			english: 'To eat'
+		},
+		{
+			hanzi: '喝',
+			pinyin: 'hē',
+			english: 'Drink'
+		},
+		{
+			hanzi: '唱',
+			pinyin: 'chàng',
+			english: 'To sing'
+		},
+		{
+			hanzi: '國',
+			pinyin: 'guó',
+			english: 'Country'
+		},
+		{
+			hanzi: '地',
+			pinyin: 'dì',
+			english: 'Earth/soil/ground'
+		},
+		{
+			hanzi: '坐',
+			pinyin: 'zuò',
+			english: 'Sit'
+		},
+		{
+			hanzi: '媽',
+			pinyin: 'mā',
+			english: 'Mom'
+		},
+		{
+			hanzi: '姨',
+			pinyin: 'yí',
+			english: 'Aunt'
+		},
+		{
+			hanzi: '家',
+			pinyin: 'jiā',
+			english: 'Family'
+		},
+		{
+			hanzi: '宿',
+			pinyin: 'sù',
+			english: 'Inn'
+		},
+		{
+			hanzi: '嶺',
+			pinyin: 'lǐng',
+			english: 'Ridge'
+		},
+		{
+			hanzi: '島',
+			pinyin: 'dǎo',
+			english: 'Island'
+		},
+		{
+			hanzi: '思',
+			pinyin: 'sī',
+			english: 'Think'
+		},
+		{
+			hanzi: '忙',
+			pinyin: 'máng',
+			english: 'Busy'
+		},
+		{
+			hanzi: '忘',
+			pinyin: 'wàng',
+			english: 'Forget'
+		},
+		{
+			hanzi: '打',
+			pinyin: 'dǎ',
+			english: 'Hit'
+		},
+		{
+			hanzi: '推',
+			pinyin: 'tuī',
+			english: 'Push'
+		},
+		{
+			hanzi: '拉',
+			pinyin: 'lā',
+			english: 'Pull'
+		},
+		{
+			hanzi: '早',
+			pinyin: 'zǎo',
+			english: 'Early'
+		},
+		{
+			hanzi: '明',
+			pinyin: 'míng',
+			english: 'Bright'
+		},
+		{
+			hanzi: '期',
+			pinyin: 'qī',
+			english: 'Period'
+		},
+		{
+			hanzi: '朝',
+			pinyin: 'hǎi',
+			english: 'Sea'
+		},
+		{
+			hanzi: '熱',
+			pinyin: 'rè',
+			english: 'Heat'
+		},
+		{
+			hanzi: '災',
+			pinyin: 'zāi',
+			english: 'Disaster'
+		},
+		{
+			hanzi: '炒',
+			pinyin: 'chǎo',
+			english: 'Fry'
+		},
+		{
+			hanzi: '狗',
+			pinyin: 'gǒu',
+			english: 'Dog'
+		},
+		{
+			hanzi: '猫',
+			pinyin: 'māo',
+			english: 'Cat'
+		},
+		{
+			hanzi: '筷',
+			pinyin: 'kuài',
+			english: 'Chopsticks'
+		},
+		{
+			hanzi: '筆',
+			pinyin: 'bǐ',
+			english: 'Pen'
+		},
+		{
+			hanzi: '花',
+			pinyin: 'huā',
+			english: 'Flower'
+		},
+		{
+			hanzi: '英',
+			pinyin: 'yīng',
+			english: 'English'
+		},
+		{
+			hanzi: '跑',
+			pinyin: 'kuài',
+			english: 'Chopsticks'
+		},
+		{
+			hanzi: '筷',
+			pinyin: 'pǎo',
+			english: 'Run'
+		},
+		{
+			hanzi: '跳',
+			pinyin: 'tiào',
+			english: 'Jump'
+		},
+		{
+			hanzi: '輛',
+			pinyin: 'liàng',
+			english: 'Vehicles'
+		},
+		{
+			hanzi: '輪',
+			pinyin: 'lún',
+			english: 'Wheel'
+		},
+		{
+			hanzi: '錢',
+			pinyin: 'qián',
+			english: 'Money'
+		},
+		{
+			hanzi: '鐵',
+			pinyin: 'tiě',
+			english: 'Iron'
+		},
+		{
+			hanzi: '開',
+			pinyin: 'kāi',
+			english: 'Open'
+		},
+		{
+			hanzi: '關',
+			pinyin: 'guān',
+			english: 'Turn off'
+		},
+		{
+			hanzi: '電',
+			pinyin: 'diàn',
+			english: 'Electrcity'
+		},
+		{
+			hanzi: '雪',
+			pinyin: 'xuě',
+			english: 'Snow'
+		},
+		{
+			hanzi: '騎',
+			pinyin: 'qí',
+			english: 'Ride'
+		},
+		{
+			hanzi: '駛',
+			pinyin: 'shǐ',
+			english: 'Drive'
+		},
+		{
+			hanzi: '鯨',
+			pinyin: 'jīng',
+			english: 'Whale'
+		},
+		{
+			hanzi: '鯊',
+			pinyin: 'shā',
+			english: 'Shark'
+		},
 	]
 }
