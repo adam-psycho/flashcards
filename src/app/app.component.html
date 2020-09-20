@@ -4,30 +4,68 @@
     <img width="250" src="../assets/images/tone-chart.png" />
   </div> -->
   
-  <p style="text-align:center">Update: Homework 3 words added!</p>
+  <p style="text-align:center"><strong>Update (9/19):</strong> Homework 4 words added! Add ability to select cards!</p>
 
-  <div class="flashcards">
-    <h3>Card count: {{data.cards.length}}</h3>
-    <div class="flashcard-options">
-      <div class="check-input" id="front">
-        <label class="main-label">Front of card</label>
-        <div class="pretty p-default " *ngFor="let key of keys">
-          <input type="checkbox" name="front-{{key}}" (change)="setKeys('front', key)" [attr.checked]="sides['front'].indexOf(key) === -1 ? null : true" />
-          <div class="state">
-            <label>{{key}}</label>
+  <div class="actions">
+    <ul>
+      <li [class.selected]="onFlashcards" (click)="onFlashcards = true"><span>Flashcards</span></li>
+      <li [class.selected]="!onFlashcards" (click)="onFlashcards = false"><span>Select Words</span></li>
+    </ul>
+  </div>
+
+  <div class="choose-words" *ngIf="!onFlashcards">
+    <p>Choose words</p>
+
+    <table *ngIf="this.selectedData != null">
+      <tr class="select-all-row">
+        <td>
+          <div class="pretty p-default">
+            <input type="checkbox" name="select-all" (change)="selectAll(all.checked)" #all [checked]="selectedData.cards.length === data.cards.length ? true : null" />
+            <div class="state">
+              <label></label>
+            </div>
+          </div>
+        </td>
+        <td colspan="{{keys.length}}">Select All</td>
+      </tr>
+      <tr *ngFor="let card of data.cards; let i = index">
+        <td>
+          <div class="pretty p-default">
+            <input type="checkbox" name="select-{{i}}" (change)="selectCard(card, keyrow.checked)" [checked]="isCardSelected(card) ? true : null" #keyrow />
+            <div class="state">
+              <label>{{key}}</label>
+            </div>
+          </div>
+        </td>
+        <td *ngFor="let key of keys" (click)="keyrow.click()">{{card[key]}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="flashcards" *ngIf="onFlashcards">
+    <h3>Card count: {{selectedData.cards.length}}</h3>
+    <ng-container *ngIf="selectedData.cards.length">
+      <div class="flashcard-options">
+        <div class="check-input" id="front">
+          <label class="main-label">Front of card</label>
+          <div class="pretty p-default " *ngFor="let key of keys">
+            <input type="checkbox" name="front-{{key}}" (change)="setKeys('front', key)" [checked]="sides['front'].indexOf(key) === -1 ? null : true" />
+            <div class="state">
+              <label>{{key}}</label>
+            </div>
+          </div>
+        </div>
+        <div class="check-input" id="back">
+          <label class="main-label">Back of card</label>
+          <div class="pretty p-default " *ngFor="let key of keys">
+            <input type="checkbox" name="back-{{key}}" (change)="setKeys('back', key)" [checked]="sides['back'].indexOf(key) === -1 ? null : true" />
+            <div class="state">
+              <label>{{key}}</label>
+            </div>
           </div>
         </div>
       </div>
-      <div class="check-input" id="back">
-        <label class="main-label">Back of card</label>
-        <div class="pretty p-default " *ngFor="let key of keys">
-          <input type="checkbox" name="back-{{key}}" (change)="setKeys('back', key)" [attr.checked]="sides['back'].indexOf(key) === -1 ? null : true" />
-          <div class="state">
-            <label>{{key}}</label>
-          </div>
-        </div>
-      </div>
-    </div>
-    <app-flashcard [cardData]="data.cards[currentCardIndex]" [keys]="sides" (onNext)="nextCard()"></app-flashcard>
+      <app-flashcard [cardData]="selectedData.cards[currentCardIndex]" [keys]="sides" (onNext)="nextCard()"></app-flashcard>
+    </ng-container>
   </div>
 </div>
