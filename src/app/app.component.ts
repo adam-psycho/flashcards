@@ -11,6 +11,9 @@ export class AppComponent {
   title = 'flashcards';
 
   constructor() {
+  	if (window.localStorage.getItem('mand-flashcards:cards')) {
+  		this.selectedData.cards = JSON.parse(window.localStorage.getItem('mand-flashcards:cards'));
+  	}
   	this.currentCardIndex = this.getRandomCardIndex();
   }
 
@@ -76,7 +79,7 @@ export class AppComponent {
   	} else {
   		this.selectedData.cards.push(card);
   	}
-  	this.currentCardIndex = this.getRandomCardIndex();
+  	this.saveSelectedCards();
   }
 
   public selectAll(checked: boolean): void {
@@ -85,6 +88,11 @@ export class AppComponent {
   	} else {
   		this.selectedData.cards = [];
   	}
+  	this.saveSelectedCards();
+  }
+
+  private saveSelectedCards(): void {
   	this.currentCardIndex = this.getRandomCardIndex();
+  	window.localStorage.setItem('mand-flashcards:cards', JSON.stringify(this.selectedData.cards));
   }
 }
