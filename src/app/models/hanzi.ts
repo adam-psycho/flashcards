@@ -595,5 +595,195 @@ export const hanzi = {
 			pinyin: 'yě',
 			english: 'also; too'
 		},
+		{
+			hanzi: '看',
+			pinyin: 'kàn',
+			english: 'ook (at); see; read; watch'
+		},
+		{
+			hanzi: '这',
+			pinyin: 'zhè',
+			english: 'this'
+		},
+		{
+			hanzi: '是',
+			pinyin: 'shì ',
+			english: 'to be (am/is/are, etc.)'
+		},
+		{
+			hanzi: '的',
+			pinyin: 'de',
+			english: '(a possessive particle)'
+		},
+		{
+			hanzi: '我的',
+			pinyin: 'wǒ de',
+			english: 'my'
+		},
+		{
+			hanzi: '朋友',
+			pinyin: 'péngyou',
+			english: 'friend'
+		},
+		{
+			hanzi: '她',
+			pinyin: 'tā ',
+			english: 'she; her'
+		},
+		{
+			hanzi: '他',
+			pinyin: 'tā',
+			english: 'he; him'
+		},
+		{
+			hanzi: '同学',
+			pinyin: 'tóngxué',
+			english: 'classmate; schoolmate'
+		},
+		{
+			hanzi: '吗',
+			pinyin: 'ma',
+			english: 'question particle'
+		},
+		{
+			hanzi: '啊',
+			pinyin: 'a',
+			english: '(a sentence-final particle)'
+		},
+		{
+			hanzi: '狗',
+			pinyin: 'gǒu',
+			english: 'dog',
+		},
+		{
+			hanzi: '爸爸',
+			pinyin: 'bàba',
+			english: 'father'
+		},
+		{
+			hanzi: '那',
+			pinyin: 'nà',
+			english: 'that'
+		},
+		{
+			hanzi: '弟弟',
+			pinyin: 'dìdi',
+			english: 'younger brother'
+		},
+		{
+			hanzi: '哎',
+			pinyin: 'ai',
+			english: 'Hey'
+		},
+		{
+			hanzi: '知道',
+			pinyin: 'zhīdào',
+			english: 'to know'
+		},
+		{
+			hanzi: '哪儿',
+			pinyin: 'nǎr',
+			english: 'where'
+		},
+		{
+			hanzi: '这个',
+			pinyin: 'zhè ge',
+			english: 'thinking'
+		},
+		{
+			hanzi: '兰兰',
+			pinyin: 'Lánlan',
+			english: 'a girl\'s name'
+		},
+		{
+			hanzi: '水立方',
+			pinyin: 'Shuǐlìfāng',
+			english: 'Water Cube'
+		},
+		{
+			hanzi: '妈妈',
+			pinyin: 'māma',
+			english: 'mother'
+		},
+		{
+			hanzi: '哥哥',
+			pinyin: 'gēge',
+			english: 'older brother'
+		},
+		{
+			hanzi: '姐姐',
+			pinyin: 'jiějie',
+			english: 'older sister'
+		},
+		{
+			hanzi: '妹妹',
+			pinyin: 'mèimei',
+			english: 'younger sister'
+		},
+		{
+			hanzi: '奶奶',
+			pinyin: 'nǎinai',
+			english: 'grandmother'
+		},
+		{
+			hanzi: '儿子',
+			pinyin: 'érzi ',
+			english: 'son'
+		},
+		{
+			hanzi: '女儿',
+			pinyin: 'nǚ\'ér',
+			english: 'daughter'
+		},
+		{
+			hanzi: '阿姨',
+			pinyin: 'āyí',
+			english: 'Aunt'
+		},
+		{
+			hanzi: '叔叔',
+			pinyin: 'shūshu',
+			english: 'Uncle'
+		},
+		{
+			hanzi: '哪',
+			pinyin: 'nǎ',
+			english: 'which; what'
+		},
+		{
+			hanzi: '国',
+			pinyin: 'guó',
+			english: 'country; nation'
+		},
+		{
+			hanzi: '人',
+			pinyin: 'rén',
+			english: 'person, people'
+		},
+		{
+			hanzi: '英国',
+			pinyin: 'nǎ',
+			english: 'which; what'
+		},
+		{
+			hanzi: '哪',
+			pinyin: 'Yīngguó',
+			english: 'England'
+		},
+		{
+			hanzi: '美国',
+			pinyin: 'Měiguó',
+			english: 'USA'
+		},
+		{
+			hanzi: '书',
+			pinyin: 'shū',
+			english: 'book'
+		},
+		{
+			hanzi: '秘密',
+			pinyin: 'mìmì',
+			english: 'secret'
+		},
 	]
 }
